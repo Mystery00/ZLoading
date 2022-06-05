@@ -6,7 +6,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.FloatRange;
+import androidx.annotation.FloatRange;
 import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 
