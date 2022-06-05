@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+//apply plugin: 'com.novoda.bintray-release'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 32
+    buildToolsVersion '32.0.0'
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
 
@@ -24,15 +24,14 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:support-annotations:27.0.1'
+    implementation 'com.android.support:support-annotations:27.0.1'
 }
 
-publish {
-    userOrg = "${USER_ORG}"
-    groupId = "${GROUP_ID}"
-    artifactId = "${ARTIFACT_ID}"
-    publishVersion = "${PUBLISH_VERSION}"
-    desc = 'Oh hi, this is a nice view of loading animation, right?'//描述，不重要
-    website = 'https://github.com/zyao89/ZCustomView'//网站，不重要；
-}
+//publish {
+//    userOrg = "${USER_ORG}"
+//    groupId = "${GROUP_ID}"
+//    artifactId = "${ARTIFACT_ID}"
+//    publishVersion = "${PUBLISH_VERSION}"
+//    desc = 'Oh hi, this is a nice view of loading animation, right?'//描述，不重要
+//    website = 'https://github.com/zyao89/ZCustomView'//网站，不重要；
+//}

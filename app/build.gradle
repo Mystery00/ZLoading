@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 32
+    buildToolsVersion '32.0.0'
     defaultConfig {
         applicationId "com.zyao89.zcustomview"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
     }
@@ -22,9 +22,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:25.4.0'
-    compile project(path: ':zloadingview')
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    implementation project(':zloadingview')
 //    compile 'com.zyao89:zloading:1.1.0'
     implementation 'com.android.support:recyclerview-v7:25.4.0'
 }
